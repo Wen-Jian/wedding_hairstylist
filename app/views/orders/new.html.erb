@@ -1,0 +1,51 @@
+<div class="container">
+	
+	<% if @sell %>
+		
+		<% @sell.errors.each do |e, m| %>
+
+			<%= e %>
+			<%= m %>
+
+		<% end %>
+
+	<% end %>
+
+	<div class="item">
+
+		<table>
+			
+			<tr>
+				
+				<td>項次</td>
+				<td>產品/服務</td>
+				<td>價格</td>
+				<td>數量</td>
+
+			</tr>
+
+			<tr>
+				<th>1</th>
+				<th>產品與服務1</th>
+				<th>3000</th>
+				<th>1</th>
+			</tr>
+
+		</table>
+		
+		<%= form_for 'order', url: orders_path, method: :post do |f|%>
+			
+			<%= f.hidden_field :customer, value: current_user %>
+			<%= f.hidden_field :service_id, value: @service %>
+			<%= f.hidden_field :price, value: 3000 %>
+			<%= f.submit 'Submit', class: "order-form" %>
+
+			
+		<% end %>
+
+	</div>
+
+
+
+
+</div>

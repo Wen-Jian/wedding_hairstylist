@@ -1,0 +1,41 @@
+
+<div>
+	
+	<div class="sub-nav ">
+		<div class="nav nav-tabs">
+			
+			<li id="hairstylist" class="active" onclick="pagechange(this)"><a href="#">新娘秘書</a></li>
+			<li id="host" onclick="pagechange(this)"><a href="#">婚禮主持</a></li>
+			<li id="Others" onclick="pagechange(this)"><a href="#">婚禮相關用品</a></li>
+
+		</div>
+
+
+	</div>
+	<div id="content">
+
+		<% @services.each do |s| %>
+
+			<a href= <%= service_path(s.id) %>>
+				
+				<div class="person">
+					
+					<div class="img">
+						<img src="" alt="圖片">
+					</div>
+
+					<div class="email">
+						
+						<%= s.email %>
+
+					</div>
+
+				</div>
+			
+			</a>
+				
+		<% end %>
+
+	</div>
+
+</div>

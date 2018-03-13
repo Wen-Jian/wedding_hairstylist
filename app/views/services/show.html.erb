@@ -1,0 +1,25 @@
+<div class="container">
+	
+		<div class="user-action btn btn-primary order-now">
+			<%= link_to 'Order now', new_order_path(:service_id => params[:id]) %>
+		</div>
+		<div class="work">
+			<% for i in 0..10  do %>
+				
+			<div class="person">
+					
+				<div class="img">
+					<img src="" alt="圖片">
+				</div>
+
+				<div class="project-name email">project-<%= i %></div>
+
+			</div>
+
+
+			<% end %>
+		</div>
+		
+	
+</div>
+

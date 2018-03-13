@@ -1,0 +1,94 @@
+// Place all the styles related to the services controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.sub-nav{
+	
+	margin-top: 100px;
+	text-align: center;
+}
+
+
+/*tab置中
+.nav, .nav-tab {
+
+	display: inline-block;
+	li {
+		display:inline;
+		a{
+			float: left;
+		}
+	}
+
+}
+*/
+
+.form{
+	
+	text-align:left;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	
+	width: 30%;
+}
+.field{
+	
+	width:100%;
+	
+}
+
+.person{
+	
+	width: 20%;
+	height: 200px;
+	box-shadow: 5px 10px 5px #888888;
+	margin: 20px 30px;
+	position: relative;
+	display: inline-block;
+}
+
+
+
+.email{
+	
+	position: absolute;
+	top: 150px;
+	left: 0px;
+	font-size: 20px;
+
+}
+
+.description{
+	
+	display: inline-block;
+	width:65%;
+	float: right;
+	font-size: 25px;
+
+}
+
+.text{
+	
+	display: inline-block;
+	margin: 5px 15px;
+}
+
+.des{
+	
+	width: 100%;
+	display: block;
+	word-break: break-all;
+	overflow:scroll;
+	height: 100px;
+}
+
+.order-now{
+	
+	float: right;
+	margin-top: 50px;
+}
+.work{
+	
+	margin-top: 50px;
+}
